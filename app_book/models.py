@@ -14,9 +14,9 @@ class Recipe(models.Model):
         ordering = ['title']
 
 
-class Ingredients(models.Model):
+class Ingredient(models.Model):
     name = models.CharField(max_length=50, verbose_name='Ингридиент')
-    recipe = models.ManyToManyField(Recipe, related_name="ingredients")
+    recipe = models.ManyToManyField(Recipe, related_name="ingr")
 
     def __str__(self):
         return self.name

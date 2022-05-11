@@ -1,5 +1,6 @@
 {% load bootstrap4 %}
 {% load static %}
+{% load crispy_forms_tags %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,14 +19,31 @@
     <nav class="col-md-auto nav flex-column border">
         <a class="nav-link root" href="{% url 'book:base' %}">Главная</a>
         <br>
-        <span class="nav-link root font-weight-bold">Рецепты</span>
-        {% for recipe in recipes %}
-            <a class="nav-link" href="{% url 'book:recipe' recipe.pk %}">{{ recipe }}</a>
+        <form method="get" class="nav-link root font-weight-bold">
+        {{ filter.form|crispy}}
+            <br>
+            <input type="submit" class="btn btn-info mb-2" value="Найти рецепт">
+        </form>
+        <br>
+        {% for obj in filter.qs %}
+            <a class="nav-link" href="{% url 'book:recipe' obj.pk %}">{{ obj.title }}</a>
         {% endfor %}
+        <br>
+
     </nav>
     <section class="col border py-2">
         {% bootstrap_messages %}
         {% block content %}
+        <h3 class="text-center">Добро пожаловать! =)</h3>
+        <br>
+        <h3>В левой части окна находится список рецептов и окно для фильтрации. Вы можете отфильтровать рецепты как
+            по самим названиям рецептов, так и по ингредиентам входящих в рецепты. Ниже представлены все возможные
+            ингредиенты, которые используются в рецептах (их можно использовать для фильтрации).</h3>
+        <br>
+        <h4>Все ингридиенты:</h4>
+        {% for ingredient in ingredients %}
+            <h5><li>{{ ingredient }}</li></h5>
+        {% endfor %}
         {% endblock %}
     </section>
 </div>

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from app_book.models import Recipe, Ingredients
+from app_book.models import Recipe, Ingredient
 
 
 class RecipeAdmin(admin.ModelAdmin):
@@ -9,4 +9,4 @@ class RecipeAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Recipe, RecipeAdmin)
-admin.site.register(Ingredients)
+admin.site.register(Ingredient)
