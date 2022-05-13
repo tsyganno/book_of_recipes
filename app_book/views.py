@@ -15,13 +15,16 @@ class BaseView(TemplateView):
     template_name = 'layout/base.html'
 
     def get(self, request, *args, **kwargs):
-        ingredients = Ingredient.objects.all()
+        ingredients = []
+        for el in Ingredient.objects.all():
+            ingredients.append(el.name)
         if 'title' in request.GET:
             if request.GET['title'] in generation_list_ingredient():
-                f = IngredientFilter(request.GET, Recipe.objects.filter(ingr__name__icontains=request.GET['title']).distinct())
-                return self.render_to_response({'filter': f, 'ingredients': ingredients})
+                f = IngredientFilter(request.GET, Recipe.objects.filter(ingr__name__icontains=request.GET['title']).
+                                     distinct())
+                return self.render_to_response({'filter': f, 'ingredients': set(ingredients)})
         f = RecipeFilter(request.GET, Recipe.objects.all())
-        return self.render_to_response({'filter': f, 'ingredients': ingredients})
+        return self.render_to_response({'filter': f, 'ingredients': set(ingredients)})
 
 
 class RecipeView(TemplateView):
@@ -30,7 +33,8 @@ class RecipeView(TemplateView):
     def get(self, request, *args, **kwargs):
         if 'title' in request.GET:
             if request.GET['title'] in generation_list_ingredient():
-                f = IngredientFilter(request.GET, Recipe.objects.filter(ingr__name__icontains=request.GET['title']).distinct())
+                f = IngredientFilter(request.GET, Recipe.objects.filter(ingr__name__icontains=request.GET['title']).
+                                     distinct())
                 recipe = Recipe.objects.get(id=self.kwargs['pk'])
                 ingredients = Ingredient.objects.filter(recipe__id=self.kwargs['pk'])
                 return self.render_to_response({'filter': f, 'recipe': recipe, 'ingredients': ingredients})
@@ -38,5 +42,3 @@ class RecipeView(TemplateView):
         recipe = Recipe.objects.get(id=self.kwargs['pk'])
         ingredients = Ingredient.objects.filter(recipe__id=self.kwargs['pk'])
         return self.render_to_response({'filter': f, 'recipe': recipe, 'ingredients': ingredients})
-
-

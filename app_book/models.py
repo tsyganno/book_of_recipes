@@ -25,7 +25,3 @@ class Ingredient(models.Model):
         verbose_name_plural = 'Ингридиенты'
         verbose_name = 'Ингридиент'
         ordering = ['name']
-
-
-
-

@@ -1,0 +1,434 @@
+[
+  {
+    "model": "app_book.Recipe",
+    "pk": 1,
+    "fields": {
+      "title": "Пюре",
+      "description": "Пюре состоит из картофеля, при его создании, в него можно добавить яйцо, молоко, лук, по вкусу."
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 1,
+    "fields": {
+      "name": "Яйцо",
+      "recipe": "1"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 2,
+    "fields": {
+      "name": "Картофель",
+      "recipe": "1"
+    }
+  },
+    {
+    "model": "app_book.Ingredient",
+    "pk": 3,
+    "fields": {
+      "name": "Вода",
+      "recipe": "1"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 4,
+    "fields": {
+      "name": "Лук",
+      "recipe": "1"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 5,
+    "fields": {
+      "name": "Соль",
+      "recipe": "1"
+    }
+  },
+  {
+    "model": "app_book.Recipe",
+    "pk": 2,
+    "fields": {
+      "title": "Гуляш",
+      "description": "Гуляш - традиционное мясное блюдо из мяса говядины в ароматном и пикантном соусе, подается с гарниром."
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 6,
+    "fields": {
+      "name": "Говядина",
+      "recipe": "2"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 7,
+    "fields": {
+      "name": "Лук",
+      "recipe": "2"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 8,
+    "fields": {
+      "name": "Чеснок",
+      "recipe": "2"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 9,
+    "fields": {
+      "name": "Мука",
+      "recipe": "2"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 10,
+    "fields": {
+      "name": "Томатная паста",
+      "recipe": "2"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 11,
+    "fields": {
+      "name": "Соль",
+      "recipe": "2"
+    }
+  },
+  {
+    "model": "app_book.Recipe",
+    "pk": 3,
+    "fields": {
+      "title": "Яишница",
+      "description": "Самый распространенный завтрак в мире, представляет собой обычная яишница, но только она у нас с беконом =)"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 12,
+    "fields": {
+      "name": "Яйцо",
+      "recipe": "3"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 13,
+    "fields": {
+      "name": "Бекон",
+      "recipe": "3"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 14,
+    "fields": {
+      "name": "Соль",
+      "recipe": "3"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 15,
+    "fields": {
+      "name": "Помидоры",
+      "recipe": "3"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 16,
+    "fields": {
+      "name": "Зелень",
+      "recipe": "3"
+    }
+  },
+  {
+    "model": "app_book.Recipe",
+    "pk": 4,
+    "fields": {
+      "title": "Буузы",
+      "description": "Традиционное бурятское блюдо, внешне похоже на манты, но начинка другая. Она состоит из рубленного мяса говядины, свинины, иногда и с добавлением баранины."
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 17,
+    "fields": {
+      "name": "Говядина",
+      "recipe": "4"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 18,
+    "fields": {
+      "name": "Свинина",
+      "recipe": "4"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 19,
+    "fields": {
+      "name": "Соль",
+      "recipe": "4"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 20,
+    "fields": {
+      "name": "Баранина",
+      "recipe": "4"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 21,
+    "fields": {
+      "name": "Лук",
+      "recipe": "4"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 22,
+    "fields": {
+      "name": "Чеснок",
+      "recipe": "4"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 23,
+    "fields": {
+      "name": "Тесто",
+      "recipe": "4"
+    }
+  },
+  {
+    "model": "app_book.Recipe",
+    "pk": 5,
+    "fields": {
+      "title": "Борщ",
+      "description": "Исконно-русский суп с мясом и свеклой, с добавлением овощей."
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 24,
+    "fields": {
+      "name": "Вода",
+      "recipe": "5"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 25,
+    "fields": {
+      "name": "Соль",
+      "recipe": "5"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 26,
+    "fields": {
+      "name": "Свинина",
+      "recipe": "5"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 27,
+    "fields": {
+      "name": "Свекла",
+      "recipe": "5"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 28,
+    "fields": {
+      "name": "Картофель",
+      "recipe": "5"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 29,
+    "fields": {
+      "name": "Лук",
+      "recipe": "5"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 30,
+    "fields": {
+      "name": "Чеснок",
+      "recipe": "5"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 31,
+    "fields": {
+      "name": "Специи",
+      "recipe": "5"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 32,
+    "fields": {
+      "name": "Разные овощи",
+      "recipe": "5"
+    }
+  },
+  {
+    "model": "app_book.Recipe",
+    "pk": 6,
+    "fields": {
+      "title": "Гороховый суп",
+      "description": "Один из самых распространенных супов на постсоветском пространстве."
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 33,
+    "fields": {
+      "name": "Вода",
+      "recipe": "6"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 34,
+    "fields": {
+      "name": "Соль",
+      "recipe": "6"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 35,
+    "fields": {
+      "name": "Копчености",
+      "recipe": "6"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 36,
+    "fields": {
+      "name": "Горох",
+      "recipe": "6"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 37,
+    "fields": {
+      "name": "Лук",
+      "recipe": "6"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 38,
+    "fields": {
+      "name": "Чеснок",
+      "recipe": "6"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 39,
+    "fields": {
+      "name": "Говядина",
+      "recipe": "6"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 40,
+    "fields": {
+      "name": "Специи",
+      "recipe": "6"
+    }
+  },
+  {
+    "model": "app_book.Recipe",
+    "pk": 7,
+    "fields": {
+      "title": "Курица под ананасом",
+      "description": "Сочная вкусная курочка под ананасом."
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 41,
+    "fields": {
+      "name": "Курица",
+      "recipe": "7"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 42,
+    "fields": {
+      "name": "Соль",
+      "recipe": "7"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 43,
+    "fields": {
+      "name": "Лук",
+      "recipe": "7"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 44,
+    "fields": {
+      "name": "Чеснок",
+      "recipe": "7"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 45,
+    "fields": {
+      "name": "Ананас",
+      "recipe": "7"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 46,
+    "fields": {
+      "name": "Сметана",
+      "recipe": "7"
+    }
+  },
+  {
+    "model": "app_book.Ingredient",
+    "pk": 47,
+    "fields": {
+      "name": "Сыр",
+      "recipe": "7"
+    }
+  }
+]
