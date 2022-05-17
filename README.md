@@ -10,18 +10,16 @@
 Проект должен быть упакован в Docker (иметь Dockerfile и docker-compose.yml).
 Необходимо опубликовать проект на GitHub и оформить Readme.md с описанием и инструкцией по запуску.
 
-
-
-
 Инструкция по запуску:
 
-2. Создание контейнеров через команду: 
- - docker-compose -f docker-compose.yml up --build 
-2. Создание и инициализация БД:
- - docker cp ./entrypoint.sql postgres:/entrypoint.sql 
- - docker exec -u postgres postgres psql postgres postgres -f /entrypoint.sql
-4. Перезапускаем контейнеры:
- - docker-compose -f docker-compose.yml up --build
-5. Заполняем БД:
- - docker exec book python manage.py loaddata data
+1. Создание контейнеров через команду: 
 
+```shell
+docker-compose -f docker-compose.yml up --build
+```
+
+2. Заполняем БД:
+
+```shell
+docker exec book python manage.py loaddata data
+```
